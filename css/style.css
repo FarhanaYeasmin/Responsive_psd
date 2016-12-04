@@ -1,0 +1,279 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+.full_hdr{
+    background-color:  #02918c;
+}
+
+
+.main_nav{
+    margin-bottom: 0;
+}
+.hdr_menu li a{
+    color: white;
+    font-family: myFirstFont;
+}
+.hdr_menu li a:hover,
+.hdr_menu li a:focus
+{
+    background-color: transparent;
+    color: black;
+}
+.crsl_cption{
+    color: #fff;
+    bottom: 35%;
+}
+.crsl_cption h1{
+    letter-spacing: 8px;
+}
+.crsl_cption a> button
+{
+    border-style: none;
+    background-color: yellow;
+    color: #000;
+    padding: 5px 15px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: all 0.5s linear;
+}
+.crsl_cption a> button:hover{
+    background-color: transparent;
+    border-color: yellow;
+    color: #fff;
+}
+
+.about_me{
+    font-size: 46px;
+    font-family: myFirstFont;
+    position: relative;
+    color: #248a86;
+   
+}
+.about_me:before{
+    position: absolute;
+    content: "~~~~~~~~ :: ~~~~~~~~";
+    top: 135%;
+    left:43%;
+    font-size: 14px;
+    color: #b5bcc5;
+   
+}
+
+.para{
+    font-size: 16px;
+    line-height:35px;
+    padding: 35px 50px 60px 50px;
+    text-align: center;
+    color: #7e8287;
+/*    font-family: myFirstFont;*/
+    font-weight: normal;
+}
+.para span{
+    font-size: 21px;
+    font-weight: bold;
+    color: #7e8287;
+    font-family: myFirstFont;
+}
+
+ 
+.col-sm-3{
+    border-right: 1px solid #7e8287;
+}
+.col-sm-3:last-child{
+    border-right: none;
+}
+.col-sm-3 .col-tp i{
+     font-size: 20px;
+    color: #02918c;
+}
+.col-sm-3 .col-btm h3{
+    font-size: 20px;
+    color: #7e8287;
+    font-family: myFirstFont;
+}
+.col-sm-3 .col-btm p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #7e8287;
+}
+
+/*** emd of about me ***/
+
+.service{
+    background: url(../images/b.jpg) left top no-repeat;
+    background-size: cover;
+    margin: 50px 0px;
+    padding: 50px 0px;
+/*    height: 500px;*/
+}
+.service-head{
+    text-transform: uppercase;
+    color: #02918c;
+    font-size: 46px;
+    font-family: myFirstFont;
+}
+.service .parag{
+    font-size: 16px;
+    line-height: 36px;
+    color: #7e8287;
+    
+}
+.main_ser i{
+    font-size: 20px;
+    color: #02918c;
+}
+.main_ser h3{
+    font-size: 20px;
+    color:  #7e8287;
+    font-family: myFirstFont;
+}
+.main_ser p{
+    color:  #7e8287;
+}
+
+ .work{
+     font-size: 46px;
+    font-family: myFirstFont;
+    position: relative;
+    color: #248a86;
+}
+.work:before{
+    position: absolute;
+    content: "~~~~~~~~ :: ~~~~~~~~";
+    top: 135%;
+    left:43%;
+    font-size: 14px;
+    color: #b5bcc5;
+   
+}
+.work_p{
+    font-size: 16px;
+    line-height:35px;
+    padding: 35px 50px 60px 50px;
+    text-align: center;
+    color: #7e8287;
+}
+.contact{
+    margin: 30px 0px;
+}
+.images{
+    width: 100%;
+}
+
+
+.photo{
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    background-color:transparent;
+    padding: 20px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 80%;
+    display: none;
+    width: 200px;
+    height: 100px;
+/*    transition: all 0.5s ease-in;*/
+} 
+.photo:hover .overlay{
+    display: block;
+}
+.photo:before{
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 100%;
+    background-color: #5ec3be;
+    opacity: 0.5;
+    right: 0;
+    bottom: 0;
+/*    transition: all 0.8s ease;*/
+    
+}
+.photo:hover:before{
+    height: 100%;
+}
+
+.main_form{
+    background: #0f0e0e;
+    padding: 50px 0;
+    text-align: center;
+}
+.form-group input{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+}
+.form-group input:focus{
+    box-shadow: none;
+}
+.form-group textarea:focus{
+    box-shadow: none;
+}
+.form-group textarea{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+     border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.contact-btn{
+    border-style: none;
+    background-color: yellow;
+    color: #000;
+    padding: 5px 45px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: all 0.5s linear;
+    border-radius: 0;
+    font-weight: bold;
+}
+.contact-btn:hover{
+    background-color: transparent;
+    border-color: yellow;
+    color: #fff;
+}
+.footer{
+ 
+    background-color: #000;
+    padding: 20px 0px;
+}
+.footer p{
+    color:#fff;
+}
+
+
+/***** responsive css****/
+
+
+@media(max-width:767px){
+    .hdr_menu li a{
+        text-align: center;
+    }    
+}
+/*@media()*/
